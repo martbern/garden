@@ -1,5 +1,4 @@
-module.exports = function(eleventyConfig) {
-    pathPrefix: "/garden/",  
+module.exports = function(eleventyConfig) { 
     const markdownIt = require('markdown-it');
     const markdownItOptions = {
         html: true,
@@ -43,6 +42,7 @@ module.exports = function(eleventyConfig) {
             includes: "includes",
             data: "_data"
         },
-        passthroughFileCopy: true
+        passthroughFileCopy: true,
+        pathPrefix: "/garden/"
     }
 }
