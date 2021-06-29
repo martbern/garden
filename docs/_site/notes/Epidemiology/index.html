@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+<title>Epidemiology • John Lemmon's Notes</title>
+
+<meta name="description" content="1-2 sentences about the site (optional)">
+
+<meta property="og:title" content="Epidemiology • John Lemmon's Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://eleventy-garden.netlify.app/notes/Epidemiology/">
+<meta property="og:image" content="/assets/avatar.png">
+<meta property="og:description" content="1-2 sentences about the site (optional)">
+
+<link rel="canonical" href="https://eleventy-garden.netlify.app/notes/Epidemiology/">
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="/" class="page-header__logo" title="Go home">
+            <img src="/assets/avatar.png" alt="" width="48">
+        </a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/notes">Notes</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+    <h1>Epidemiology</h1>
+<h2>Multiple Comparisons Problem</h2>
+<p><a href="https://lagunita.stanford.edu/courses/Medicine/MedStats./Summer2015/courseware/ea998389c16042f399ccff01e5bab161/a6ea67a1a37643d68bbd6c686da33aef/">Stanford Lagunita Video</a></p>
+<p>Signifikansniveau = type-I fejlrate</p>
+<h2>Does this apply to the litterature as a whole?</h2>
+<p>Put another way, when you look at the litterature as a whole, you expect 5% of all comparisons to turn out false-positives at a p ≤ 0,05 level, given complete independence between tests.</p>
+<p>If tests are dependent, so that tests that are positive increase amount of tests in that area, you expect the rate of false-positives to be higher.</p>
+<p>§ p(&lt; 0.05 | H_0 true) = 0.05 §</p>
+<p>However, if dependent tests are counted together as one test, you expect it to be lower. As such, individual comparisons are probably unreliable, but general conclusions are more reliable.</p>
+<p>However, if we're interested in the probability of H0 being true given a p &lt; 0,05, or whether it truly is a false positive, we have to consider the logical reversal. § p(H_0 true | &lt;0.05 ) ≈ 0.50 §, due to bias etc. See &quot;/Sterne JA and Smith GD. Sifting through the evidence./&quot;</p>
+<p>Replication improves statistical power <em>and /dramatically/</em> decreases the risk of experimenter-bias.</p>
+<h2>How do I get around it?</h2>
+<p>One way of getting around &quot;at least one positive finding&quot; in a single paper is to choose primary outcomes and secondary outcomes. Primary outcomes carry the brunt of your significance (eg. fewer tests that you'll take seriously), whereas secondary results should be taken lightly.</p>
+<p>If a primary outcome is significant, it's really interesting. If a secondary outcome is significant, it should weigh very lightly epistemiologically.</p>
+<p>Or you can correct your secondary outcomes for multiple comparisons.</p>
+<h3>P-value corrections</h3>
+<p>Basically moves the problem up one level. Makes it so that the probability of our paper having <em>one</em> false positive is 0,05, rather than the probability of any given test being a false-positive is 0,05.</p>
+<h4>Bonferroni</h4>
+<p>Simple, assumes complete independence between tests, way too conservative.</p>
+<p>Divides significance level among tests. Eg., significance level .050 divided by 4 tests, .0125.</p>
+<h2>Why is the p-value distribution uniform?</h2>
+<p>The P-value is the chance of getting a result that's as or more different from the H0 as your current result.</p>
+<p>It's the probability of getting your current p-value given that H0 is true:</p>
+<p>§ p(H_0 true | p(x)) §</p>
+<p>If the H0 is true, there's no difference between estimates and, as such, estimates should be distributed around H0 in whichever way the current test accounts for. Any difference from H0 is going to be completely random. The distribution of complete randomness is near-uniform.</p>
+<!-- #Life -->
+<!-- {BearID:C0C5CC4B-568F-4F82-810E-9D6B83EFBFD8-15756-000013035CABEFC3} -->
+
+</article>
+<!-- <hr>
+<p class="backlinks-title larger">Backlinks</p>
+
+<p class="backlinks-default">No backlinks found.</p>
+ -->
+
+    </main>
+    
+    <footer class="page-footer">
+        <small>Copyright John Lemmon</small>
+    </footer>
+</body>
+</html>

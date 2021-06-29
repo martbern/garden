@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+<title>Can I Use Multi-Armed Bandit Problem for Time Well Spent • John Lemmon's Notes</title>
+
+<meta name="description" content="1-2 sentences about the site (optional)">
+
+<meta property="og:title" content="Can I Use Multi-Armed Bandit Problem for Time Well Spent • John Lemmon's Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://eleventy-garden.netlify.app/notes/Can I use multi-armed bandit problem for time well spent/">
+<meta property="og:image" content="/assets/avatar.png">
+<meta property="og:description" content="1-2 sentences about the site (optional)">
+
+<link rel="canonical" href="https://eleventy-garden.netlify.app/notes/Can I use multi-armed bandit problem for time well spent/">
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="/" class="page-header__logo" title="Go home">
+            <img src="/assets/avatar.png" alt="" width="48">
+        </a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/notes">Notes</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+    <h1>Can I use multi-armed bandit problem for time well spent?</h1>
+<p><a href="/notes/%C2%A7My%20Implementation%20of%20Life%20Well%20Spent%20(LWS)/">§My Implementation of Life Well Spent (LWS)</a></p>
+<p>I can! E,g. use a <a href="/notes/Gittins%20index/">Gittins index</a> calculated from the last x days.</p>
+<p>Turns out Gittins indexes are pretty hard to compute. Might instead use an <a href="/notes/Upper%20Confidence%20Bound%20Algorithm/">Upper Confidence Bound Algorithm</a>, Eg. calculate some interval estimating confidence, and then order the options by their upper bound.</p>
+<p>To do this, I want to:</p>
+<ul>
+<li>Estimate variance
+<ul>
+<li>Avg. rating</li>
+<li>Calculate deviation for each item</li>
+<li>Use those to calculate SD</li>
+</ul>
+</li>
+<li>Use variance to estimate upper bound</li>
+<li>Set a standard variance for first observation</li>
+</ul>
+<!-- {BearID:2AED9F39-719F-4593-B4EC-41440EE4D0B4-945-000004B852CAA0DA} -->
+
+</article>
+<!-- <hr>
+<p class="backlinks-title larger">Backlinks</p>
+
+<p class="backlinks-default">No backlinks found.</p>
+ -->
+
+    </main>
+    
+    <footer class="page-footer">
+        <small>Copyright John Lemmon</small>
+    </footer>
+</body>
+</html>

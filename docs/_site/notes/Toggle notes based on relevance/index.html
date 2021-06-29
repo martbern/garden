@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+<title>Toggle Notes Based on Relevance • John Lemmon's Notes</title>
+
+<meta name="description" content="1-2 sentences about the site (optional)">
+
+<meta property="og:title" content="Toggle Notes Based on Relevance • John Lemmon's Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://eleventy-garden.netlify.app/notes/Toggle notes based on relevance/">
+<meta property="og:image" content="/assets/avatar.png">
+<meta property="og:description" content="1-2 sentences about the site (optional)">
+
+<link rel="canonical" href="https://eleventy-garden.netlify.app/notes/Toggle notes based on relevance/">
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="/" class="page-header__logo" title="Go home">
+            <img src="/assets/avatar.png" alt="" width="48">
+        </a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/notes">Notes</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+    <h1>Toggle notes based on relevance</h1>
+<p>The use-case is selecting which notes to keep repeating and which not as my semester ends, and as I switch between departments at the hospital.</p>
+<ul>
+<li>I typically want that to be done at the field x detail level, eg. I only want to retain paediatrics at an &quot;akutmodtagelsen&quot; level right now.
+<ul>
+<li>The process is not idempotent. Why is that?</li>
+<li>Check for #anki/deck tags in note
+<ul>
+<li>Use those tags to select subdeck</li>
+</ul>
+</li>
+<li>Match QX subtypes
+<ul>
+<li>Use to set subdeck</li>
+</ul>
+<ul>
+<li>It appears that changing the subdeck of the generated card doesn't move an already existing card in Anki.</li>
+<li>This means that my subdeck-moving mechanism won't work
+<ul>
+<li>Are there other things I can try to move cards?</li>
+<li>Can I use another mechanism? Eg. add tags to cards via the same code, and then manually suspend/unsuspend
+<ul>
+<li>Can this happen?</li>
+<li>Is it reversible (eg. will re-importing remove tags?)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Match #anki/tag/med/specialty tags
+<ul>
+<li>Use to set tags</li>
+<li><a href="http://test.md">test.md</a> (eg. akut myeloid leukæmi) genererer ikke kort
+<ul>
+<li>It's due to the subdeck processing, somehow it fails</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>One way of doing that is in Anki – generate a new deck for each level of detail beneath each specialty. But genanki handles multiple decks poorly (at least so Ankdown says), so that may not be a great solution. However, I haven't tested it myself, and it seems to fit the bill for all my needs right now.</li>
+<li>Another is to let each card inherit the tags of the note. This means that I can manually adjust rather easily from anki – but it also means that changing level of detail in the note isn't automatically applied.</li>
+</ul>
+<ul>
+<li>Sometimes I want to disable a note or an entire category as well.</li>
+</ul>
+<ul>
+<li>I think looking for #anki/tag/disabled, but the tag having to include only anki and disabled (eg. also works) is a good fit.</li>
+<li>Will have to move to a disabled subdeck, rather than not produce the card (to update old cards)</li>
+</ul>
+<p>Dimensions:
+Level of detail: GP, akut, hospital, eksamen. Are these mutually exclusive?</p>
+<p>Use QG, QA, QH, QE prompts.</p>
+<p>Specialty: #anki/tag/med/Hematology</p>
+<p>Some entire cards can nicely be disabled, implement #anki/tag/disabled</p>
+<p>How do I move a sub-category of cards? Eg. the hospital cards for paediatrics.</p>
+<h2>Backlinks</h2>
+<ul>
+<li><a href="/notes/Make%20my%20personal%20mnemonic%20medium%20ready%20for%20medicine/">Make my personal mnemonic medium ready for medicine</a>
+<ul>
+<li><a href="/notes/Toggle%20notes%20based%20on%20relevance/">Toggle notes based on relevance</a></li>
+</ul>
+</li>
+</ul>
+<!-- {BearID:B2C06C5B-10F8-4E54-BDBC-1B88C0B729C4-1056-000001DDEDD50948} -->
+
+</article>
+<!-- <hr>
+<p class="backlinks-title larger">Backlinks</p>
+
+<p class="backlinks-default">No backlinks found.</p>
+ -->
+
+    </main>
+    
+    <footer class="page-footer">
+        <small>Copyright John Lemmon</small>
+    </footer>
+</body>
+</html>

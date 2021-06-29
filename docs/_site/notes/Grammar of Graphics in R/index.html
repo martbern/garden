@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+<title>Grammar of Graphics in R • John Lemmon's Notes</title>
+
+<meta name="description" content="1-2 sentences about the site (optional)">
+
+<meta property="og:title" content="Grammar of Graphics in R • John Lemmon's Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://eleventy-garden.netlify.app/notes/Grammar of Graphics in R/">
+<meta property="og:image" content="/assets/avatar.png">
+<meta property="og:description" content="1-2 sentences about the site (optional)">
+
+<link rel="canonical" href="https://eleventy-garden.netlify.app/notes/Grammar of Graphics in R/">
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="/" class="page-header__logo" title="Go home">
+            <img src="/assets/avatar.png" alt="" width="48">
+        </a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/notes">Notes</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+    <h1>Grammar of Graphics in R</h1>
+<p>An R layer is defined by:</p>
+<ol>
+<li>Data</li>
+<li>Mapping</li>
+<li>Statistical transformation (stat)</li>
+<li>Geometric object (geom)</li>
+<li>Position adjustment (position)</li>
+</ol>
+<p>If you want to split up a graphic into multiple sub-graphics, use facet_wrap:
+<img src="BearImages/ADEF630A-C68E-4C3B-8BF7-BB187FA64447-477-0000011243E3491F/08E7AA4C-4FF8-45A9-BA35-747BBFBADC44.png" alt=""></p>
+<pre><code class="language-r">ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
+  geom_point() +
+  facet_wrap(~ class)
+</code></pre>
+<p>There are many  gloms! Some of the most frequently used:
+<img src="BearImages/39DABCD4-60A0-4123-AC26-93FD4E06B889-477-000001528DD68756/8DB85D56-DFDE-4DFA-A3C0-7B797A5C151E.png" alt=""></p>
+<pre><code>geom_point(aes(x = x_var, y = y_var))
+</code></pre>
+<!-- {BearID:00158C10-9F76-4A59-9790-20139BAF5F0A-477-0000007B66AFB53D} -->
+
+</article>
+<!-- <hr>
+<p class="backlinks-title larger">Backlinks</p>
+
+<p class="backlinks-default">No backlinks found.</p>
+ -->
+
+    </main>
+    
+    <footer class="page-footer">
+        <small>Copyright John Lemmon</small>
+    </footer>
+</body>
+</html>

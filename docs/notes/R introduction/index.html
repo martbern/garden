@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+<title>R Introduction • John Lemmon's Notes</title>
+
+<meta name="description" content="1-2 sentences about the site (optional)">
+
+<meta property="og:title" content="R Introduction • John Lemmon's Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://eleventy-garden.netlify.app/notes/R introduction/">
+<meta property="og:image" content="/assets/avatar.png">
+<meta property="og:description" content="1-2 sentences about the site (optional)">
+
+<link rel="canonical" href="https://eleventy-garden.netlify.app/notes/R introduction/">
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="/" class="page-header__logo" title="Go home">
+            <img src="/assets/avatar.png" alt="" width="48">
+        </a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/notes">Notes</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+    <h1>R introduction</h1>
+<!-- #anki/deck/Programming -->
+<p>Q. How do you define a variable in R?
+A.</p>
+<pre><code class="language-r">myvar &lt;- valueOfMyvar
+</code></pre>
+<p>Q. How do you supply arguments to a function in R?
+A.</p>
+<pre><code class="language-r">myFunc(argument_value)
+</code></pre>
+<p>Q. How do you list available variables in R?
+A.</p>
+<pre><code class="language-r">ls()
+</code></pre>
+<p>Q. How do you define a container-vector in R?
+A.</p>
+<pre><code class="language-r">p &lt;- c(2,3,5,7)
+</code></pre>
+<p>Q.</p>
+<pre><code class="language-r">p &lt;- c(2,3,5,7)
+</code></pre>
+<p>What is <code>p[3]</code> equal to in R?
+A. 5</p>
+<p>Q. What is <code>p[-3]</code> equal to in R?</p>
+<pre><code class="language-r">p &lt;- c(2,3,5,7)
+</code></pre>
+<p>A.</p>
+<pre><code class="language-r">p &lt;- c(2,3,7)
+</code></pre>
+<p>Q. How do you convert to an int in R?
+A.</p>
+<pre><code class="language-r">p &lt;- c(2,3,7)
+p_int &lt;- as.integer(p)
+</code></pre>
+<p>Q. How do you define a function in R?
+A.</p>
+<pre><code class="language-r">sum &lt;- function(a, b) {
+    return (a+b)
+}
+
+sum(2, 3)
+</code></pre>
+<p>Q. How do you call sum in R?</p>
+<pre><code class="language-r">sum &lt;- function(a, b) {
+    return (a+b)
+}
+</code></pre>
+<p>A.</p>
+<pre><code>sum(2, 3)
+</code></pre>
+<p>Q. How do you iterate over a vector in R?
+A.</p>
+<pre><code class="language-r">for (item in vector_name) {
+	# do things...
+}
+</code></pre>
+<p>Q. How do you pipe to another function in R?
+A-</p>
+<pre><code class="language-r">small_df &lt;- df_cards %&gt;%
+	select(mpg, disp)&lt;
+</code></pre>
+<!-- {BearID:127EF092-15C5-4E6E-ADAC-666B5554C424-640-00000F20CFF60CA9} -->
+
+</article>
+<!-- <hr>
+<p class="backlinks-title larger">Backlinks</p>
+
+<p class="backlinks-default">No backlinks found.</p>
+ -->
+
+    </main>
+    
+    <footer class="page-footer">
+        <small>Copyright John Lemmon</small>
+    </footer>
+</body>
+</html>

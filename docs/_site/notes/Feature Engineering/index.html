@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+<title>Feature Engineering • John Lemmon's Notes</title>
+
+<meta name="description" content="1-2 sentences about the site (optional)">
+
+<meta property="og:title" content="Feature Engineering • John Lemmon's Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://eleventy-garden.netlify.app/notes/Feature Engineering/">
+<meta property="og:image" content="/assets/avatar.png">
+<meta property="og:description" content="1-2 sentences about the site (optional)">
+
+<link rel="canonical" href="https://eleventy-garden.netlify.app/notes/Feature Engineering/">
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="/" class="page-header__logo" title="Go home">
+            <img src="/assets/avatar.png" alt="" width="48">
+        </a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/notes">Notes</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+    <h1>Feature Engineering</h1>
+<p>Q. What does one-hot encoding mean?
+A. Transforming a categorical variable into a vector with as many dimensions as the number of categories</p>
+<p>Q. Which data-management process is this an example of?
+<img src="BearImages/4C1AB092-8006-405C-B0EB-A51265DFD81D-5010-00000F1E2347A0A5/359ADC12-613F-46B2-97E7-4DFDCC065901.png" alt="">
+A. One-hot encoding</p>
+<p>Q. If you have a feature with categories [red, yellow, green], which process might you use to encode those in the dataset?
+A. One-hot encoding
+<img src="BearImages/18CF63B8-88D8-43D7-BABA-47D2FD39C488-5010-0000125945364830/359ADC12-613F-46B2-97E7-4DFDCC065901.png" alt=""></p>
+<p>Q. If you have a categorical feature with categories [poor, good, better], which process might you use to encode those in the dataset?
+A. Ordinal encoding [1, 2, 3]</p>
+<p>Q. Why might we use binning for ML?
+A. For a continuous variable, it “hints” to the algorithm that the rough category is what matters</p>
+<p>Q. Why might we want to normalise data for machine learning?
+A. 1) Faster speed of learning and 2) Decreased risk of numerical overflow</p>
+<p>Q. Why might normalising data lead to faster gradient descent?
+A. Rather than features with large numbers dominating the gradients, each feature counts equally</p>
+<p>Q. How does normalisation differ from standardisation?
+A. Normalisation is standardising to a normal distribution</p>
+<p>In which cases are [0,1] standardisation preferable to normalisation?</p>
+<ol>
+<li>Unsupervised learning, 2) If the value is normally distributed and 3) With outliers</li>
+</ol>
+<p>When might we prefer normalisation to [0,1] standardisation?</p>
+<ol>
+<li>Supervised learning, 2) Values are not normally distributed and 3) No outliers</li>
+</ol>
+<h2>Backlinks</h2>
+<ul>
+<li><a href="/notes/%C2%A7Machine%20Learning/">§Machine Learning</a>
+<ul>
+<li><a href="/notes/Feature%20Engineering/">Feature Engineering</a></li>
+</ul>
+</li>
+</ul>
+<!-- #anki/deck/ML -->
+<!-- {BearID:C4D0F016-F2C8-4EF1-9317-1EF6571E6DAC-5010-00000EFBF50718D6} -->
+
+</article>
+<!-- <hr>
+<p class="backlinks-title larger">Backlinks</p>
+
+<p class="backlinks-default">No backlinks found.</p>
+ -->
+
+    </main>
+    
+    <footer class="page-footer">
+        <small>Copyright John Lemmon</small>
+    </footer>
+</body>
+</html>

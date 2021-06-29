@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+<title>Causal SWIGs • John Lemmon's Notes</title>
+
+<meta name="description" content="1-2 sentences about the site (optional)">
+
+<meta property="og:title" content="Causal SWIGs • John Lemmon's Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://eleventy-garden.netlify.app/notes/Causal SWIGs/">
+<meta property="og:image" content="/assets/avatar.png">
+<meta property="og:description" content="1-2 sentences about the site (optional)">
+
+<link rel="canonical" href="https://eleventy-garden.netlify.app/notes/Causal SWIGs/">
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="/" class="page-header__logo" title="Go home">
+            <img src="/assets/avatar.png" alt="" width="48">
+        </a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/notes">Notes</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+    <h1>Causal SWIGs</h1>
+<p>Single world intervention graphs.</p>
+<h2>Backlinks</h2>
+<ul>
+<li><a href="/notes/%C2%A7Causal%20inference/">§Causal inference</a>
+<ul>
+<li><a href="/notes/Causal%20SWIGs/">Causal SWIGs</a></li>
+</ul>
+</li>
+</ul>
+<!-- #anki/deck/Causal inference# -->
+<p>Q. What does exchangeability mean in causal inference?
+A. We can use a treated person’s outcome as an untreated’s counterfactual</p>
+<p>Q. Which biases must be absent for exchangeability to hold?
+A. No confounding, unbalanced effect modification, measurement bias or selection bias</p>
+<p>Q. How can we identify exchangeability in a DAG?
+A. No open backdoor paths</p>
+<p>Q. Why can we often only examine causal effects on populations, not individuals?
+A. We can’t examine the counterfactual at the individual level; we can’t go back in time.</p>
+<p>Q.
+<img src="BearImages/44BF906E-EB67-4980-B0AE-3B91DBB020EA-972-0000063ACDF84A7F/CFCC9723-FC45-4FA7-A962-406296409E38.png" alt="">
+In causal inference, what is the meaning of the right side of the arrow?
+A. The average outcome if all individuals had received treatment a = 1.</p>
+<p>Q.
+<img src="BearImages/39458416-B839-492B-9C45-21A1829518BD-972-000006527F371381/CFCC9723-FC45-4FA7-A962-406296409E38.png" alt="">
+In causal inference, what is the name of this type of graph?
+A. SWIG - single world intervention graph</p>
+<p>Q. Why might you use SWIGs instead of DAGs?
+A. They make explicit which variables must be separated for exchangeability.</p>
+<p>Q.
+<img src="BearImages/0A017AFD-5AB4-4EAA-95DF-B53167DDABD1-972-0000064907EC9F43/83766E07-BBD7-413A-AB3F-74C2CC9EC984.png" alt="">
+What do we call this notation in causal inference?
+A. Node splitting</p>
+<p>Q. When are SWIGs preferable to DAGs?
+A. In complex settings, eg. time-varying treatments</p>
+<!-- {BearID:2DACC899-5067-4182-AC36-FC0C1D58104B-972-000004847D6D407C} -->
+
+</article>
+<!-- <hr>
+<p class="backlinks-title larger">Backlinks</p>
+
+<p class="backlinks-default">No backlinks found.</p>
+ -->
+
+    </main>
+    
+    <footer class="page-footer">
+        <small>Copyright John Lemmon</small>
+    </footer>
+</body>
+</html>

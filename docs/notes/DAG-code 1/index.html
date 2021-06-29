@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+<title>DAG-Code 1 • John Lemmon's Notes</title>
+
+<meta name="description" content="1-2 sentences about the site (optional)">
+
+<meta property="og:title" content="DAG-Code 1 • John Lemmon's Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://eleventy-garden.netlify.app/notes/DAG-code 1/">
+<meta property="og:image" content="/assets/avatar.png">
+<meta property="og:description" content="1-2 sentences about the site (optional)">
+
+<link rel="canonical" href="https://eleventy-garden.netlify.app/notes/DAG-code 1/">
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="/" class="page-header__logo" title="Go home">
+            <img src="/assets/avatar.png" alt="" width="48">
+        </a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/notes">Notes</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+    <h1>DAG-code 1</h1>
+<p>dag {
+&quot;Base processes&quot; [latent,pos=&quot;-0.738,-1.152&quot;]
+&quot;Hospital contacts&quot; [pos=&quot;-0.781,-0.144&quot;]
+&quot;Other symptoms&quot; [pos=&quot;-0.485,-0.491&quot;]
+&quot;Psychiatric disease&quot; [pos=&quot;-0.280,-0.812&quot;]
+&quot;Somatic disease&quot; [pos=&quot;-1.410,-0.800&quot;]
+Diagnoses [outcome,pos=&quot;-0.788,0.068&quot;]
+MHC [exposure,pos=&quot;-1.068,-0.497&quot;]
+Medication [outcome,pos=&quot;-0.796,0.285&quot;]
+&quot;Base processes&quot; -&gt; &quot;Psychiatric disease&quot;
+&quot;Base processes&quot; -&gt; &quot;Somatic disease&quot;
+&quot;Hospital contacts&quot; -&gt; Diagnoses
+&quot;Other symptoms&quot; -&gt; &quot;Hospital contacts&quot;
+&quot;Psychiatric disease&quot; -&gt; &quot;Other symptoms&quot;
+&quot;Psychiatric disease&quot; -&gt; MHC
+&quot;Somatic disease&quot; -&gt; &quot;Other symptoms&quot;
+&quot;Somatic disease&quot; -&gt; MHC
+Diagnoses -&gt; Medication
+MHC -&gt; &quot;Hospital contacts&quot;
+}</p>
+<h2>Backlinks</h2>
+<ul>
+<li><a href="/notes/Is%20the%20MHC%20flow%20in%20hospital%20generally%20appropriate/">Is the MHC flow in hospital generally appropriate</a>
+<ul>
+<li>This is under the naive assumption that MHC can only be caused by a somatic or psychiatric disease:
+<a href="/notes/DAG-code%201/">DAG-code 1</a></li>
+</ul>
+</li>
+</ul>
+<!-- #Work -->
+<!-- {BearID:3A7A7A18-126E-43BE-AAD2-46F68CD4A391-15756-0000130BA2F91F02} -->
+
+</article>
+<!-- <hr>
+<p class="backlinks-title larger">Backlinks</p>
+
+<p class="backlinks-default">No backlinks found.</p>
+ -->
+
+    </main>
+    
+    <footer class="page-footer">
+        <small>Copyright John Lemmon</small>
+    </footer>
+</body>
+</html>

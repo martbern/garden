@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+<title>Extract Tags with Context From Notes to Airtable • John Lemmon's Notes</title>
+
+<meta name="description" content="1-2 sentences about the site (optional)">
+
+<meta property="og:title" content="Extract Tags with Context From Notes to Airtable • John Lemmon's Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://eleventy-garden.netlify.app/notes/Extract tags with context from notes to Airtable/">
+<meta property="og:image" content="/assets/avatar.png">
+<meta property="og:description" content="1-2 sentences about the site (optional)">
+
+<link rel="canonical" href="https://eleventy-garden.netlify.app/notes/Extract tags with context from notes to Airtable/">
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="/" class="page-header__logo" title="Go home">
+            <img src="/assets/avatar.png" alt="" width="48">
+        </a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/notes">Notes</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+    <h1>Extract tags with context from notes to Airtable</h1>
+<p>This is an extension of <a href="/notes/%C2%A7My%20note%20system/">§My note system</a>, allowing weighted random prompts to be sent to me via some system. It's a general implementation of the <a href="/notes/%C2%A7Self-recommendations/">§Self-recommendations</a>, but now not only for things to read, but for actions more broadly.</p>
+<p>I want it to:</p>
+<ul>
+<li>Go through notes
+<ul>
+<li>For each note
+<ul>
+<li>Add UUID to missing notes</li>
+<li>Look for specific tags
+<ul>
+<li>If matched, connect to Airtable base table
+<ul>
+<li>If matching UUID, skip*</li>
+<li>Else, add new record with
+<ul>
+<li>Note title</li>
+<li>Full note content</li>
+<li>Note excerpt</li>
+<li>Match type (tag)</li>
+<li>UUID</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Remove records that represent a tag no longer found (eg. if the hashtag has been deleted from a markdown file)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Ideally, it should exhibit:</p>
+<ul>
+<li><a href="/notes/Idempotency/">Idempotency</a>
+<ul>
+<li>Definitely required since I want to <a href="/notes/%C2%A7Guide%20exploration/">§Guide exploration</a>, probably by recency</li>
+</ul>
+</li>
+<li><a href="/notes/Identity/">Identity</a>
+<ul>
+<li>The idea that I can update a record after it's been created. Probably also required! Can use the UUID function from Ankdown</li>
+</ul>
+</li>
+</ul>
+<h2>Backlinks</h2>
+<ul>
+<li><a href="/notes/%C2%A7My%20research%20system/">§My research system</a>
+<ul>
+<li><a href="/notes/Extract%20tags%20with%20context%20from%20notes%20to%20Airtable/">Extract tags with context from notes to Airtable</a></li>
+</ul>
+</li>
+<li><a href="/notes/Add%20RSS%20support%20to%20md%20extractor/">Add RSS support to md extractor</a>
+<ul>
+<li>This is an extension of <a href="/notes/Extract%20tags%20with%20context%20from%20notes%20to%20Airtable/">Extract tags with context from notes to Airtable</a>.</li>
+</ul>
+</li>
+</ul>
+<!-- #Life -->
+<!-- {BearID:CBE96193-673F-4367-BB30-5B87BF38D4E2-15756-000013035FE0C369} -->
+
+</article>
+<!-- <hr>
+<p class="backlinks-title larger">Backlinks</p>
+
+<p class="backlinks-default">No backlinks found.</p>
+ -->
+
+    </main>
+    
+    <footer class="page-footer">
+        <small>Copyright John Lemmon</small>
+    </footer>
+</body>
+</html>

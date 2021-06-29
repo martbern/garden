@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+<title>Make a New Note for Each Cloze • John Lemmon's Notes</title>
+
+<meta name="description" content="1-2 sentences about the site (optional)">
+
+<meta property="og:title" content="Make a New Note for Each Cloze • John Lemmon's Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://eleventy-garden.netlify.app/notes/Make a new note for each cloze/">
+<meta property="og:image" content="/assets/avatar.png">
+<meta property="og:description" content="1-2 sentences about the site (optional)">
+
+<link rel="canonical" href="https://eleventy-garden.netlify.app/notes/Make a new note for each cloze/">
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="/" class="page-header__logo" title="Go home">
+            <img src="/assets/avatar.png" alt="" width="48">
+        </a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/notes">Notes</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+    <h1>Make a new note for each cloze</h1>
+<p><a href="/notes/%C2%A7My%20Personal%20Mnemonic%20Medium%20(instance)/">§My Personal Mnemonic Medium (instance)</a></p>
+<p>What if I make a new note for each cloze? Then I can use
+the cloze content hash + filename as the note ID.</p>
+<p>Cards that contain the cloze as part of their context will still be updated, since they're regenerated on each r
+un of the script.</p>
+<p>I'll run into problems:</p>
+<ul>
+<li>I modify a cloze prompt, the old note isn't modified nor deleted.
+<ul>
+<li>Previously (when using hashing from filename with all clozes in the same note), each md resulted in only one note.
+<ul>
+<li>When I updated the files, the old cloze prompt number was overridden. This means that a modified cloze resulted in a new card and an empty card.</li>
+</ul>
+</li>
+<li>I can in find these new orphan notes in Anki based on &quot;edited&quot; time – this catches cards where the deck name has changed as well!</li>
+</ul>
+</li>
+</ul>
+<!-- #Life -->
+<!-- {BearID:666F9F9B-DD55-4B15-90A3-8CFEE1288973-15756-000013040889022A} -->
+
+</article>
+<!-- <hr>
+<p class="backlinks-title larger">Backlinks</p>
+
+<p class="backlinks-default">No backlinks found.</p>
+ -->
+
+    </main>
+    
+    <footer class="page-footer">
+        <small>Copyright John Lemmon</small>
+    </footer>
+</body>
+</html>

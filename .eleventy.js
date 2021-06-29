@@ -1,5 +1,5 @@
 module.exports = function(eleventyConfig) {
-    
+    pathPrefix: "/garden/",  
     const markdownIt = require('markdown-it');
     const markdownItOptions = {
         html: true,
@@ -38,7 +38,7 @@ module.exports = function(eleventyConfig) {
         useGitIgnore: false,
         dir: {
             input: "./",
-            output: "_site",
+            output: "docs",
             layouts: "layouts",
             includes: "includes",
             data: "_data"

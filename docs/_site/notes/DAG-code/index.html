@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+<title>DAG-Code • John Lemmon's Notes</title>
+
+<meta name="description" content="1-2 sentences about the site (optional)">
+
+<meta property="og:title" content="DAG-Code • John Lemmon's Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://eleventy-garden.netlify.app/notes/DAG-code/">
+<meta property="og:image" content="/assets/avatar.png">
+<meta property="og:description" content="1-2 sentences about the site (optional)">
+
+<link rel="canonical" href="https://eleventy-garden.netlify.app/notes/DAG-code/">
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="/" class="page-header__logo" title="Go home">
+            <img src="/assets/avatar.png" alt="" width="48">
+        </a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/notes">Notes</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+    <h1>DAG-code</h1>
+<p>dag {
+&quot;Medication use&quot; [outcome,pos=&quot;-0.512,-1.001&quot;]
+&quot;Psychiatric diagnosis&quot; [pos=&quot;-0.382,-1.016&quot;]
+&quot;Psychiatric disease&quot; [pos=&quot;-0.383,-1.028&quot;]
+&quot;Shared base processes&quot; [pos=&quot;-0.507,-1.031&quot;]
+&quot;Somatic diagnosis&quot; [pos=&quot;-0.637,-1.015&quot;]
+&quot;Somatic disease&quot; [pos=&quot;-0.637,-1.027&quot;]
+MHC [exposure,pos=&quot;-0.509,-1.019&quot;]
+&quot;Psychiatric diagnosis&quot; -&gt; &quot;Medication use&quot;
+&quot;Psychiatric disease&quot; -&gt; &quot;Psychiatric diagnosis&quot;
+&quot;Psychiatric disease&quot; -&gt; MHC
+&quot;Shared base processes&quot; -&gt; &quot;Psychiatric disease&quot;
+&quot;Shared base processes&quot; -&gt; &quot;Somatic disease&quot;
+&quot;Shared base processes&quot; -&gt; MHC
+&quot;Somatic diagnosis&quot; -&gt; &quot;Medication use&quot;
+&quot;Somatic disease&quot; -&gt; &quot;Somatic diagnosis&quot;
+&quot;Somatic disease&quot; -&gt; MHC
+MHC -&gt; &quot;Medication use&quot;
+MHC -&gt; &quot;Psychiatric diagnosis&quot;
+MHC -&gt; &quot;Somatic diagnosis&quot;
+}</p>
+<h2>Backlinks</h2>
+<ul>
+<li><a href="/notes/Rejected:%20Does%20MHC%20have%20direct%20effects%20on%20medication%20use/">Rejected: Does MHC have direct effects on medication use</a>
+<ul>
+<li>!<a href="/notes/Pasted%20image%203%201.png/">Pasted image 3 1.png</a></li>
+</ul>
+</li>
+</ul>
+<!-- #Work -->
+<!-- {BearID:5BBD0E22-ECE5-4282-B0E1-123013D4310A-15756-0000130BA3B2281C} -->
+
+</article>
+<!-- <hr>
+<p class="backlinks-title larger">Backlinks</p>
+
+<p class="backlinks-default">No backlinks found.</p>
+ -->
+
+    </main>
+    
+    <footer class="page-footer">
+        <small>Copyright John Lemmon</small>
+    </footer>
+</body>
+</html>

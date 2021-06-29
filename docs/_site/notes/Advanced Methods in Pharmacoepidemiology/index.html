@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+<title>Advanced Methods in Pharmacoepidemiology • John Lemmon's Notes</title>
+
+<meta name="description" content="1-2 sentences about the site (optional)">
+
+<meta property="og:title" content="Advanced Methods in Pharmacoepidemiology • John Lemmon's Notes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://eleventy-garden.netlify.app/notes/Advanced Methods in Pharmacoepidemiology/">
+<meta property="og:image" content="/assets/avatar.png">
+<meta property="og:description" content="1-2 sentences about the site (optional)">
+
+<link rel="canonical" href="https://eleventy-garden.netlify.app/notes/Advanced Methods in Pharmacoepidemiology/">
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="/" class="page-header__logo" title="Go home">
+            <img src="/assets/avatar.png" alt="" width="48">
+        </a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/notes">Notes</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+    <h1>Advanced Methods in Pharmacoepidemiology</h1>
+<p><em>Propensity scores</em>
+Assumptions:</p>
+<ul>
+<li>Positivity – all units must be able to receive treatment (eg. no absolute indication or contraindications)
+Probably more, haven’t been talked about.</li>
+</ul>
+<p>A multivariate model of being treated.
+<img src="BearImages/D3007793-1E22-430A-941F-94B5569B076A-2458-000009C0032F79A0/9A1066F5-DBE7-4F34-8575-7B4432004BBE.png" alt=""></p>
+<p>Typically used for matching or as a covariate, to adjust for confounding.</p>
+<ul>
+<li>Matching</li>
+<li>Stratification</li>
+<li>Inverse treatment probability weighting (ITPW): As a weighting criterion (1/PS for treated, 1/(1-PS) for untreated), eg. The reciprocal value of the probability of receiving the treatment than you actually receive
+<ul>
+<li>ITPW: What if we treated everyone in the whole population, vs. treating none of them?</li>
+<li>PS: What if we hadn’t treated those who actually got the treatment?</li>
+</ul>
+</li>
+</ul>
+<p>Can’t adjust for unmeasured confounding.
+* Nearest neighbour
+* Sequential, balanced nearest neighbor
+* Greedy</p>
+<p>In the case of covariate imbalance (eg. Cohen’s d &gt; .1):</p>
+<ul>
+<li>Include it in the adjustment along with the PS or</li>
+<li>(Up-weigh it in the regression model that builds the PS)</li>
+</ul>
+<p>We typically trim the tails, to remove those with near-absolute indications and contraindications (since they don’t really provide much information to us – those are the ones we know need treatment, or know shouldn’t have treatment. If treatment is contrary to prediction, it means something weird is going on. Eg. some prediction to unmeasured confounding (“clinical despair”, “we have to do something, even though we break the guidelines”).</p>
+<p><img src="BearImages/504D7FB6-B8DB-4620-B8D7-73B0A6953985-2458-00000B21CD28F883/1453C83B-36D6-4889-93E7-11CFE0355D18.png" alt=""></p>
+<p><img src="BearImages/7105D734-7ACC-494D-9E49-44B8E6A42F9F-2458-00000B46047AD12D/23D3F17D-D761-421D-A485-847E0CEF34DF.png" alt=""></p>
+<p>Risk factors for the outcome but not associated with exposure, means that we match based on everything associated with the outcome except the main exposure. Removes noise on both sides (eg. exposed and unexposed), essentially.</p>
+<ul>
+<li>
+<p>What are the advantages compared to using those variables specifically?</p>
+<ul>
+<li>Smaller confidence intervals?, but a loss of information?</li>
+</ul>
+</li>
+<li>
+<p>How does it fit into a causal understanding of confounding?</p>
+<ul>
+<li>Eg. how do we avoid collider-bias or over-adjustment bias?</li>
+</ul>
+</li>
+</ul>
+<h2>Weighting</h2>
+<p><img src="BearImages/7A913580-3E1D-4426-B2ED-24A352B24B37-2458-00000DBAD06A110F/64916320-DA4D-4A58-AA6D-1F030D9A393A.png" alt=""></p>
+<!-- {BearID:400D26FC-D345-4E40-B050-6A7FAEC5D1F7-2458-00000909ED8DC19F} -->
+
+</article>
+<!-- <hr>
+<p class="backlinks-title larger">Backlinks</p>
+
+<p class="backlinks-default">No backlinks found.</p>
+ -->
+
+    </main>
+    
+    <footer class="page-footer">
+        <small>Copyright John Lemmon</small>
+    </footer>
+</body>
+</html>
