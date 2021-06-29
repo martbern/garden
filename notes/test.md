@@ -1,5 +1,5 @@
-# Tests (links)
-- standard markdown, external - [example a](https://binyam.in)
-- mediawiki-style, internal - [[ bar.md | example b ]]
-- mediawiki-style, internal, doesn't exist - [[ non-existent ]]
-- [[😁 grinning]]
+# Test
+
+<!-- #Life -->
+
+<!-- {BearID:8E485C71-C6C0-4C86-9889-86B84DEDBCE5-15756-000013045B69AD81} -->

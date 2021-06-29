@@ -12,7 +12,7 @@ module.exports = {
     type: "note",
     eleventyComputed: {
         title: data => titleCase(data.title || data.page.fileSlug),
-        backlinks: (data) => {
+        /* backlinks: (data) => {
             const notes = data.collections.notes;
             const currentFileSlug = data.page.fileSlug;
 
@@ -47,6 +47,6 @@ module.exports = {
             }
 
             return backlinks;
-        }
+        } */
     }
 }

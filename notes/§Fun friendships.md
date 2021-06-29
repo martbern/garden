@@ -1,0 +1,1 @@
+The kind of fun friends I am currently looking for are especially those that have imagination, that are creative, and with whom I can have interesting conversations. [[Fun is the spice of life]], and for me the above mentioned activities are incredibly fun.

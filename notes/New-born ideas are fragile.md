@@ -1,0 +1,3 @@
+# New-born ideas are fragile
+
+<!-- {BearID:97F1875B-6432-4F0B-A3F1-A385FC1F3FA0-11937-00001B92EFC408FE} -->

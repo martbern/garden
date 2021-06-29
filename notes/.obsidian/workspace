@@ -1,0 +1,112 @@
+{
+  "main": {
+    "id": "7601714be01cbce7",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b85014029ef37d9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "What is the goal of me building a tribe.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "a2aef47b1b1e67d8",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "§Fun friendships.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "66626219782d6b27",
+    "type": "split",
+    "children": [
+      {
+        "id": "de4d4b66eaf32604",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "507d9d8bfd57ab08",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a7798483d49f66a2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "3ffa0dae19846102",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4d77c787ed2fa414",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "What is the goal of me building a tribe.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4bdaa66593627329",
+    "type": "split",
+    "children": [],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "4b85014029ef37d9",
+  "lastOpenFiles": [
+    "What is the goal of me building a tribe.md",
+    "§Fun friendships.md",
+    "§Fun friends.md",
+    "§Stronger Together (platonic).md",
+    "People can only support your intentions if they know what they are.md",
+    "Surround yourself with people that support your values.md",
+    "§Close friends.md",
+    "Value effort efficiency.md",
+    "§Determination.md",
+    "Delaying gratification is often the path to a life well lived.md"
+  ]
+}

@@ -1,0 +1,13 @@
+# Rtg. håndled
+Q. Hvad ses her?
+![](BearImages/6096A122-7741-450A-B36D-63689E87CF2F-80814-0001216817ADC97D/C7E123EA-7307-443B-877B-BAA4C26EF321.png)
+A. Artrit + periostal reaktion
+
+Q. Hvad ses her?
+![](BearImages/DB5C5720-E8F4-42E7-89F1-2E9EBF05D090-80814-0001218CF57E65E0/1BD330C7-887A-4F9A-8DFB-C1C3AF24AE32.png)
+A. [[Rodledsartrose]] - ledspalteafsmalning, osteofytter, subluksation.
+![](BearImages/3DFB05C3-5DC5-45B2-8811-AFFBD9020255-80814-0001218FE8A7DACE/E471AAFB-A984-421E-95D2-387D451BD1D7.png)
+
+<!-- #anki/deck/Medicine #anki/tag/med/Radiology -->
+
+<!-- {BearID:7FD9B9E2-938F-40DC-85CC-0ABC6314AAB4-80814-0001215FF1F92C31} -->

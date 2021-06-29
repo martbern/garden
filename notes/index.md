@@ -2,4 +2,4 @@
 title: About these notes
 ---
 # About these Notes
-These are some fake notes. Feel free to poke around. You may spot an [[easter egg]]  or two! Also, I like [[food]].
+Hi, and welcome to my set of notes! Start out with something like [[§The Happiness Trap]] to get a feel for them.
